@@ -1,0 +1,26 @@
+{
+  "name": "wikimart/yii-locked-console-command",
+  "description": "Yii console command base class providing locked processes functionality",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Sergey Nosov",
+      "email": "sergejs.nosovs@gmail.com",
+      "role": "original author"
+    },
+    {
+      "name": "Sergey Mikhaylov",
+      "email": "sergey.mihaylov@cheb.wikimart.ru",
+      "role": "developer"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Wikimart\\YiiLockedConsoleCommand\\": "src"
+    }
+  },
+  "require": {
+    "php": ">=5.4",
+    "yiisoft/yii": ">=1.1.16"
+  }
+}
