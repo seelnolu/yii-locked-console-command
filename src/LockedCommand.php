@@ -51,11 +51,11 @@ abstract class LockedCommand extends \CConsoleCommand
         return parent::beforeAction($action, $params);
     }
 
-    protected function afterAction($action, $params)
+    protected function afterAction($action, $params, $exitCode = 0)
     {
         \Yii::log("Unlock after action", \CLogger::LEVEL_TRACE, self::CATEGORY);
         unlink($this->lockFile);
-        return parent::afterAction($action, $params);
+        return parent::afterAction($action, $params, $exitCode);
     }
 
     /**
